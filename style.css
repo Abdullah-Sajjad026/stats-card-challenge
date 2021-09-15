@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+img {
+    width: 100%;
+}
+
+.main {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.analytics {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.analytics .card {
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 1rem;
+    background-color: hsl(244, 38%, 16%);
+    box-shadow: 0 5px 10px black;
+}
+
+.analytics .card .img-col {
+    position: relative;
+}
+
+.analytics .card .img-col img {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.analytics .card .img-col::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: .8;
+    mix-blend-mode: multiply;
+}
+
+.analytics .card .text-col {
+    padding: 7.6rem;
+
+}
+
+.analytics .card .text-col h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.analytics .card .text-col h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.analytics .card .text-col p {
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 6rem;
+}
+
+.analytics .card .text-col .stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.analytics .card .text-col .stats h3 {
+    font-size: 2rem;
+
+}
+
+.analytics .card .text-col .stats h3 span {
+    font-size: 1.3rem;
+    margin-top: .7rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: .7px;
+    font-family: 'Lexend Deca', sans-serif;
+    display: block;
+    font-weight: 200;
+}
