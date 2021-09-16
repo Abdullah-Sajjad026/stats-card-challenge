@@ -18,8 +18,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - Semantic HTML5 markup
 - Flexbox
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### Useful resources
 
 - [resourcesmark](https://www.resourcesmark.vercel.app) - This helped me a lot.
